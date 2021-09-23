@@ -9,7 +9,7 @@ export const Product = ({data}) => {
             <br/>
             <p style={{color:"green",fontSize:"10 sans-serif"}}>{data.price}</p>
             <br/>
-            <Link  to="/Detail" className="btn btn-primary">توضیحات بیشتر </Link>
+            <Link  to="/Detail" className="btn btn-primary"><span>توضیحات بیشتر </span></Link>
             </div>
         </div>
         

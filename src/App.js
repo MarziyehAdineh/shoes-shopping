@@ -13,10 +13,11 @@ function App() {
       <div className="container">
         <BrowserRouter>
         <Switch>
-          <Route  path="/">
+          <Route exact  path="/">
           <HomePage/>
           </Route>
-          <Route path="/Detail">
+        
+          <Route path="/detail">
           <Detail/>
           </Route>
         </Switch>
