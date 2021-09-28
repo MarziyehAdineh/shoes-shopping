@@ -4,7 +4,7 @@ import { Product } from "./Product";
     return(
         <div className="row">
             {props.Product.map((item)=>(
-                <div className="col-4" key={item.id}>
+                <div className="col-3" key={item.id}>
                     <Product  data={item}/>
                 </div>
              ) )}

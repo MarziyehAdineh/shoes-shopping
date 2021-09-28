@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from "react-router-dom";
 export const Product = ({data}) => {
     return (
-        <div className="card mt-5" style={{  backgroundColor:"white",borderRadius:"10PX" ,width:"300px",  height:"400px"}}>
+        <div className="card mt-5" style={{backgroundColor:"white",borderRadius:"10PX" ,width:"260px",  height:"390px"}}>
             <div className="container">
             <img src={data.pic} className="card-img-top" style={{borderRadius:"4%", height:"200px"}}/>
             <h5 className="card-title" style={{fontSize:"8" ,fontFamily:"sans-serif"}}>{data.title}</h5>
