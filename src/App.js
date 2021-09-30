@@ -9,15 +9,17 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+
       <div className="container">
         <BrowserRouter>
-          <Switch>
+      <HomePage />
+          {/* <Switch>
             <Route exact path="/">
               <HomePage />
             </Route>
 
             <Route path="/detail/:id" component={Detail} />
-          </Switch>
+          </Switch> */}
         </BrowserRouter>
       </div>
     </div>
