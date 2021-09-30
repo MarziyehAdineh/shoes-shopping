@@ -12,7 +12,7 @@ function App() {
 
       <div className="container">
         <BrowserRouter>
-      <HomePage />
+          <HomePage />
           {/* <Switch>
             <Route exact path="/">
               <HomePage />
