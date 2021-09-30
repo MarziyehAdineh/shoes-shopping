@@ -1,5 +1,7 @@
 import react from "react";
 import React, { Component } from "react";
+import { Fragment } from "react/cjs/react.production.min";
+import { CommentList } from "../Component/comment";
 import { ProductService } from "../Component/product";
 
 export class Detail extends Component {
@@ -19,20 +21,12 @@ export class Detail extends Component {
       return <div>loading...</div>;
     }
     return (
-      <div
-        style={{
-          backgroundColor: "white",
-          height: "550px",
-          borderRadius: "1%",
-          margin: "12px",
-          boxShadow: "revert",
-        }}
-      >
-        <div className="row">
+      <Fragment>
+            <div className="row">
           <div className="col-5">
             <br />
             <br />
-            <img alt={data.title} src={data.pic} width="150%" />
+            <img alt={data.title} src={data.pic} width="100%" />
           </div>
           <div className="col-7">
             <h1 style={{ fontFamily: "sans-serif", color: "green" }}>
@@ -72,9 +66,11 @@ export class Detail extends Component {
                 </span>
               </ul>
             </div>
+            <div className="row"><CommentList comments={data.comments ||[]}/></div>
+
           </div>
         </div>
-      </div>
+      </Fragment>
     );
   }
 }
