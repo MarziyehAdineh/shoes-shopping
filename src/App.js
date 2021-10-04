@@ -5,21 +5,20 @@ import { Navbar } from "./Component/Navbar";
 import { Detail } from "./pages";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HomePage from "./pages/Home";
+
 function App() {
   return (
     <div className="App">
       <Navbar />
-
       <div className="container">
         <BrowserRouter>
-          <HomePage />
-          {/* <Switch>
+          {/* <HomePage /> */}
+          <Switch>
             <Route exact path="/">
               <HomePage />
             </Route>
-
             <Route path="/detail/:id" component={Detail} />
-          </Switch> */}
+          </Switch>
         </BrowserRouter>
       </div>
     </div>
