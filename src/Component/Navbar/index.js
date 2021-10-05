@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { CardIcon } from "../card";
 export const Navbar = () => {
   return (
@@ -74,9 +75,10 @@ export const Navbar = () => {
                 </a>
               </li>
             </ul>
+            <Link to="Cart">
             <div style={{ marginRight: 30 }}>
               <CardIcon />
-            </div>
+            </div></Link>
             <form className="d-flex">
               <input
                 className="form-control me-2"

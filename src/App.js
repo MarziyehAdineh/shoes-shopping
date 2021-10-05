@@ -5,23 +5,25 @@ import { Navbar } from "./Component/Navbar";
 import { Detail } from "./pages";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HomePage from "./pages/Home";
+import { CartPage } from "./pages";
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
       <Navbar />
       <div className="container">
-        <BrowserRouter>
-          {/* <HomePage /> */}
           <Switch>
             <Route exact path="/">
               <HomePage />
             </Route>
             <Route path="/detail/:id" component={Detail} />
+            <Route path="/Cart" children={<CartPage/>} />
           </Switch>
-        </BrowserRouter>
       </div>
     </div>
+    </BrowserRouter>
+
   );
 }
 
