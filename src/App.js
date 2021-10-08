@@ -14,9 +14,7 @@ function App() {
       <Navbar />
       <div className="container">
           <Switch>
-            <Route exact path="/">
-              <HomePage />
-            </Route>
+            <Route exact path="/" component={HomePage}/>
             <Route path="/detail/:id" component={Detail} />
             <Route path="/Cart" children={<CartPage/>} />
           </Switch>

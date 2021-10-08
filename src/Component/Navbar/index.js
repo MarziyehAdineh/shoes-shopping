@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { CardIcon } from "../card";
+import { Search } from "./Search";
 export const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
+          <a className="navbar-brand">
+            <p style={{ color: "red", fontFamily: "unset" }}>shoes shoping</p>
           </a>
           <button
             className="navbar-toggler"
@@ -24,12 +25,12 @@ export const Navbar = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
-                  Home
+                  <Link to="/"> صفحه ی اصلی</Link>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Link
+                <a className="nav-link">
+                  <Link to="/Cart">سبد خرید</Link>
                 </a>
               </li>
               <li className="nav-item dropdown">
@@ -41,7 +42,7 @@ export const Navbar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  {/* Dropdown */}
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
@@ -51,7 +52,7 @@ export const Navbar = () => {
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Another action
+                      {/* Another action */}
                     </a>
                   </li>
                   <li>
@@ -59,7 +60,7 @@ export const Navbar = () => {
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Something else here
+                      {/* Something else here */}
                     </a>
                   </li>
                 </ul>
@@ -71,25 +72,17 @@ export const Navbar = () => {
                   tabIndex="-1"
                   aria-disabled="true"
                 >
-                  Disabled
+                  {/* Disabled */}
                 </a>
               </li>
             </ul>
+
             <Link to="Cart">
-            <div style={{ marginRight: 30 }}>
-              <CardIcon />
-            </div></Link>
-            <form className="d-flex">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+              <div style={{ marginRight: 30 }}>
+                <CardIcon />
+              </div>
+            </Link>
+            <Search />
           </div>
         </div>
       </nav>

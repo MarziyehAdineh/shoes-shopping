@@ -1,8 +1,8 @@
 import axios from "axios";
 const apiAddress = "http://localhost:5000/product/";
 export const ProductService = {
-  getProduct: () => {
-    return axios.get(apiAddress);
+  getProducts: (q = "") => {
+    return axios.get(apiAddress + q);
     //  return axios.get("https://someetest2021.somee.com/product/");
   },
   getProuductById: (id) => {

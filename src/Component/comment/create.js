@@ -5,28 +5,28 @@ export function CreateComment(props) {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    if(formIsValid()) {
-        props.onComment(state.comment);
-        setState({comment: {} , errors: {}})
+    if (formIsValid()) {
+      props.onComment(state.comment);
+      setState({ comment: {}, errors: {} });
     }
   };
 
   const formIsValid = () => {
     const errors = {};
-    if(!state.comment.author) {
-       errors.author = 'Name is required';
+    if (!state.comment.author) {
+      errors.author = "Name is required";
     }
-    if(!state.comment.text) {
-        errors.text = 'Text is required';
+    if (!state.comment.text) {
+      errors.text = "Text is required";
     }
 
-    setState({...state, errors});
+    setState({ ...state, errors });
     return !(errors.author || errors.text);
-  }
+  };
 
   const changeHandler = (event) => {
     const data = { [event.target.name]: event.target.value };
-    setState({...state, comment: { ...state.comment, ...data } });
+    setState({ ...state, comment: { ...state.comment, ...data } });
   };
 
   return (
@@ -35,7 +35,7 @@ export function CreateComment(props) {
         <label>Name</label>
         <input
           onChange={changeHandler}
-          value={state.comment.author || ''}
+          value={state.comment.author || ""}
           name="author"
           type="text"
           className="form-control"
@@ -45,7 +45,7 @@ export function CreateComment(props) {
       <div className="form-group">
         <label>نظرات خود راوارذ کنید</label>
         <textarea
-        value={state.comment.text || ''}
+          value={state.comment.text || ""}
           onChange={changeHandler}
           className="form-control"
           name="text"
@@ -60,7 +60,3 @@ export function CreateComment(props) {
     </form>
   );
 }
-
-
-
-
