@@ -6,7 +6,7 @@ export function cartReducer(state = [], action) {
     case ADD_TO_CART:
       const product = state.find(item=>item.id === action.payload.id);
       if (product) {
-        product.quantity += 1;
+        product.quantity =+1;
         const products = state.filter((item) => item.id !== action.payload.id);
         return [...products, product];
       }

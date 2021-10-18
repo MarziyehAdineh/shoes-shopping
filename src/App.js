@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -7,6 +8,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HomePage from "./pages/Home";
 import { CartPage } from "./pages";
 
+import "./n.css";
 function App() {
   return (
     <BrowserRouter>

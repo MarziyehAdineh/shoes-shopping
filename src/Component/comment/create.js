@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import StarRating from "../../pages/Star";
 export function CreateComment(props) {
   const [state, setState] = useState({ comment: {}, errors: {} });
 
@@ -14,10 +14,10 @@ export function CreateComment(props) {
   const formIsValid = () => {
     const errors = {};
     if (!state.comment.author) {
-      errors.author = "Name is required";
+      errors.author = "لطفا نام خود را وارد کنید";
     }
     if (!state.comment.text) {
-      errors.text = "Text is required";
+      errors.text = "لطفا نظر خود را وارد کنید";
     }
 
     setState({ ...state, errors });
@@ -30,9 +30,9 @@ export function CreateComment(props) {
   };
 
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={submitHandler} id="comment"  >
       <div className="form-group">
-        <label>Name</label>
+        <label>نام</label>
         <input
           onChange={changeHandler}
           value={state.comment.author || ""}
@@ -43,19 +43,23 @@ export function CreateComment(props) {
         <small className="form-text text-danger">{state.errors.author}</small>
       </div>
       <div className="form-group">
-        <label>نظرات خود راوارذ کنید</label>
+        <label>نظرات خود راوارد کنید</label>
         <textarea
           value={state.comment.text || ""}
           onChange={changeHandler}
           className="form-control"
           name="text"
           rows="5"
+
         ></textarea>
+          <StarRating/>
+
         <small className="form-text text-danger">{state.errors.text}</small>
+
       </div>
 
       <button type="submit" className="btn btn-primary">
-        Submit
+      ثبت نظر
       </button>
     </form>
   );

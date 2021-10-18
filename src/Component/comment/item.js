@@ -10,6 +10,7 @@ export function CommentItem(props) {
         <h3 className="heading">{props.author}</h3>
         <p>{props.text}</p>
       </div>
+
     </div>
   );
 }
