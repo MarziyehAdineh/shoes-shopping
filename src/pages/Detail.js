@@ -15,11 +15,14 @@ export class Detail extends Component {
     ProductService.getProuductById(id).then(({ data }) =>
       this.setState({ data })
     );
-
+  
     this.unsubscribe = cartstore.subscribe(() => {
       console.log(cartstore.getState());
     });
-  }
+    const off = this.props.match.params.id;
+    ProductService.getProuductById("off").then(({ data }) =>
+      this.setState({ data })
+    )}
   componentWillUnmount() {
     this.unsubscribe();
   }
@@ -107,7 +110,6 @@ export class Detail extends Component {
             <CreateComment onComment={this.submitComment.bind(this)} />
             <CommentList comments={data.comments || []} />
           </div>
-          
         </div>
       </Fragment>
     );

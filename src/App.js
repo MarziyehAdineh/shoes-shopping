@@ -13,8 +13,8 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
-      <Navbar />
-      <div className="container">
+      <Navbar/>
+      <div className="container"> 
           <Switch>
             <Route exact path="/" component={HomePage}/>
             <Route path="/detail/:id" component={Detail} />

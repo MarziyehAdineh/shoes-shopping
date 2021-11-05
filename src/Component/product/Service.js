@@ -8,6 +8,9 @@ export const ProductService = {
   getProuductById: (id) => {
     return axios.get(apiAddress + id);
   },
+  getProductsWithOff: () => {
+    return axios.get(apiAddress +"off");
+  },
 
   addComment: (productId, comment) =>
     axios.post(apiAddress + productId + "/comments", comment),
