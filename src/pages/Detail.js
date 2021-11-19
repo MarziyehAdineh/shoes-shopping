@@ -19,10 +19,11 @@ export class Detail extends Component {
     this.unsubscribe = cartstore.subscribe(() => {
       console.log(cartstore.getState());
     });
-    const off = this.props.match.params.id;
-    ProductService.getProuductById("off").then(({ data }) =>
-      this.setState({ data })
-    )}
+    // const off = this.props.match.params.id;
+    // ProductService.getProuductById("off").then(({ data }) =>
+    //   this.setState({ data })
+    // )
+  }
   componentWillUnmount() {
     this.unsubscribe();
   }
@@ -69,12 +70,17 @@ export class Detail extends Component {
                 />
               </span>
               <hr />
-              
               <div
-                style={{ color: "#000", display: "flex", textIndent: "8px" }}
+                style={{ height:"20px",width:"70px", display: "flex", fontFamily:"sans-serif" }}
+              >
+               <del><b>{data.priceOff}</b> </del>
+
+              </div>
+              <div
+                style={{ color: "#000", display: "flex", textIndent: "8px",fontFamily:"sans-serif" }}
               >
                 <p> تومان </p>
-                <span>{data.price} </span>
+                <span><b>{data.price}</b> </span>
               </div>
               <button
                 style={{ height: "40px" }}

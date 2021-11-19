@@ -3,20 +3,30 @@ import { FaTintSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Time from "./tim";
 import Timer from "./timer";
+
 export default class MySlide extends Component {
+ 
+  
   render() {
     return (
+<div>
+<Link to={"/Detail/" + this.props.product.id} style={{textDecoration:"none",color:"black"}} >
+
       <div
+
+
         id="product"
         className="card mt-5"
-        style={{ borderRadius: "10PX", width: "260px", height: "390px" }}
+        style={{ borderRadius: "10PX", width: "230px", height: "350px" }}
       >
+
         <Timer/>
+
         <div className="container">
           <img
             src={this.props.product.pic}
             className="card-img-top"
-            style={{ borderRadius: "4%", height: "195px" }}
+            style={{ borderRadius: "4%", height: "150px" }}
           />
           <br />
           <h1
@@ -42,7 +52,7 @@ export default class MySlide extends Component {
               color: "white",
             }}
           >
-            <del>{this.props.product.priceOff}</del>
+            <del>{this.props.product.priceOff.toLocaleString()}</del>
           </div>
           <div style={{ display: "flex", textIndent: "3px" }}>
             <p style={{ fontSize: "14px" }}>تومان</p>{" "}
@@ -51,19 +61,21 @@ export default class MySlide extends Component {
                 fontSize: "15px",
                 fontWeight: "bold",
                 textShadow: "unset",
+              color:"black"
               }}
             >
-              {this.props.product.price}
+              {this.props.product.price.toLocaleString()}
             </p>
-            <Link to={"/Detail/" + this.props.product.id} className="btn btn-primary">
-              <span style={{ width: "40px", height: "20px", fontSize: "12px" }}>
-                توضیحات بیشتر{" "}
+              {/* <span style={{ width: "20%", height: "100px", fontSize: "12px" }}>
+                توضیحات بیشتر
               </span>
-            </Link>
-            <hr/>
+            */}
            
           </div>
         </div>
+      </div>
+      </Link>
+
       </div>
     );
   }

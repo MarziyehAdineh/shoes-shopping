@@ -5,11 +5,7 @@ import { ProductService } from "../Component/product";
 export default class HomePage extends React.Component {
   state = { products: [] };
 
-  fetchData() {
-    ProductService.getProductsWithOff(this.props.location.search).then(
-      (response) => this.setState({ products: response.data })
-    );
-  }
+ 
   fetchData() {
     ProductService.getProducts(this.props.location.search).then((response) =>
       this.setState({ products: response.data })

@@ -15,7 +15,9 @@
    
 
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-   
+    <link type="text/css" rel="stylesheet" href="jalalidatepicker.min.css" />
+    <script type="text/javascript" src="jalalidatepicker.min.js"></script>
+    
     <title>shop</title>
   </head>
   <body>
@@ -23,6 +25,9 @@
     <div id="root"></div>
     <!-- <div id="img" style="width: 250px;border: solid;"> -->
   <!-- </div>  -->
+  <script src="js/jquery-1.10.1.min.js"></script>
+
+  <script src="js/persianDatepicker.js"></script>
   <script>
 var myVar = setInterval(setColor, 300);
  
@@ -41,6 +46,11 @@ var myVar = setInterval(setColor, 300);
 //     setTimeout(typeWriter, speed);
 //   }
 // }
+
+
+jalaliDatepicker.startWatch();
+
+
 </script>
 
    </script>

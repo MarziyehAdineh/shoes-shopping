@@ -39,7 +39,7 @@ export const Product = ({ data }) => {
               textShadow: "unset",
             }}
           >
-            {data.price}
+            {data.price.toLocaleString()}
           </p>
           <Link to={"/Detail/" + data.id} className="btn btn-primary">
             <span style={{ width: "40px", height: "20px", fontSize: "12px" }}>

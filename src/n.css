@@ -31,6 +31,30 @@ body{
       }
 
   }
+  #sabt{
+text-shadow: red;
+margin-top: 60px; 
+align-items:stretch;
+box-shadow: 6px 6px 15px 0 rgba(0, 0 ,2,0.3);
+background-color: rgb(221, 213, 213);
+height: 300px;
+ }
+  #sabtname{
+    display:flex;
+    width: 300px;
+font-family:  iransance;
+text-align: center;
+margin-left: 690px;
+direction:rtl;
+margin-top: 80px;
+  }
+ #in{
+   border-radius: 4px;
+   width: 300px;
+ text-align: center;
+ /* margin-left: 170px; */
+  }
+
   #product{
       background-color: #eeeeee;
       box-shadow: 6px 6px 15px 0 rgba(0, 0 ,2,0.3);

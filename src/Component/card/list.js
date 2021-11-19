@@ -46,6 +46,7 @@ export function Cart({ product }) {
 
   return (
     <div>
+      <div>
       <table class="table">
         <thead>
           <tr>
@@ -66,15 +67,14 @@ export function Cart({ product }) {
                 <img width="50" src={product.pic} />
               </td>
               <td>{product.title}</td>
-              <td>{product.price}</td>
+              <td>{product.price.toLocaleString()}</td>
               <td> <button width="20px" style={{margin:"0px",width:"20px",height:"20"}} onClick={() => addHandler(product)}>+</button>
             {product.quantity}
               <button  style={{margin:"0px",width:"20px",height:"20"}} onClick={() => removecardHandler(product)}>-</button>
               </td>
               <td>{product.price * product.quantity}</td>
-              {/* <td> {product.size}</td> */}
 
-              <td>
+              <td>ُ
                 <button
                   onClick={() => removeHandler(product)}
                   class="btn btn-danger"
@@ -84,9 +84,16 @@ export function Cart({ product }) {
 
               </td>
             </tr>
+
           ))}
+          
         </tbody>
+
       </table>
+
+      </div>
+              <p></p>
+
     </div>
   );
 }
