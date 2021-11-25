@@ -7,6 +7,7 @@ import { Detail, Sabtname } from "./pages";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HomePage from "./pages/Home";
 import { CartPage } from "./pages";
+import Log from "./pages/Log";
 
 import "./n.css";
 function App() {
@@ -20,6 +21,8 @@ function App() {
             <Route path="/detail/:id" component={Detail} />
             <Route path="/Cart" children={<CartPage/>} />
             <Route path="/Sabtname" children={<Sabtname/>} />
+            <Route path="/Log" children={<Log/>} />
+
           </Switch>
       </div>
     </div>

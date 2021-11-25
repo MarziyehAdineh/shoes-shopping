@@ -4,11 +4,18 @@ import StarRating from "../../pages/Star";
 
 export const Product = ({ data }) => {
   return (
+
+    <div>
+            <Link to={"/Detail/" + data.id} style={{textDecoration:"none",color:"black"}} >
+ 
+
     <div
       id="product"
       className="card mt-5"
-      style={{ borderRadius: "10PX", width: "260px", height: "390px" }}
+      style={{ borderRadius: "10PX", width: "260px", height: "350px" }}
+
     >
+
       <div className="container">
         <img
           src={data.pic}
@@ -39,15 +46,16 @@ export const Product = ({ data }) => {
               textShadow: "unset",
             }}
           >
-            {data.price.toLocaleString()}
+                     {parseInt(data.price).toLocaleString()}
+
           </p>
-          <Link to={"/Detail/" + data.id} className="btn btn-primary">
-            <span style={{ width: "40px", height: "20px", fontSize: "12px" }}>
-              توضیحات بیشتر{" "}
-            </span>
-          </Link>
+           
         </div>
       </div>
     </div>
+    </Link>
+
+    </div>
+ 
   );
 };

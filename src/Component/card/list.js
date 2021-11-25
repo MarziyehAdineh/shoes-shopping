@@ -13,6 +13,8 @@ import { addToCart } from "../product";
 import { ADD_TO_CART } from "../product";
 import { cartReducer } from "../product/redux/reducer";
 import { Action } from "redux";
+import { Log} from "../../pages";
+import { Link } from "react-router-dom";
 
 function compare( a, b ) {
   if ( a.id < b.id ){
@@ -67,12 +69,12 @@ export function Cart({ product }) {
                 <img width="50" src={product.pic} />
               </td>
               <td>{product.title}</td>
-              <td>{product.price.toLocaleString()}</td>
+              <td>{parseInt(product.price).toLocaleString()}</td>
               <td> <button width="20px" style={{margin:"0px",width:"20px",height:"20"}} onClick={() => addHandler(product)}>+</button>
             {product.quantity}
               <button  style={{margin:"0px",width:"20px",height:"20"}} onClick={() => removecardHandler(product)}>-</button>
               </td>
-              <td>{product.price * product.quantity}</td>
+              <td>{(product.price * product.quantity).toLocaleString()}</td>
 
               <td>ُ
                 <button
@@ -92,8 +94,13 @@ export function Cart({ product }) {
       </table>
 
       </div>
-              <p></p>
-
+      <Link to="/Log">
+      <button
+                  class="btn btn-danger"
+                >
+                 ادامه ی فرایند خرید
+                </button>
+                </Link>
     </div>
   );
 }

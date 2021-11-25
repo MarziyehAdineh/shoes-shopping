@@ -13,8 +13,6 @@ export default class MySlide extends Component {
 <Link to={"/Detail/" + this.props.product.id} style={{textDecoration:"none",color:"black"}} >
 
       <div
-
-
         id="product"
         className="card mt-5"
         style={{ borderRadius: "10PX", width: "230px", height: "350px" }}

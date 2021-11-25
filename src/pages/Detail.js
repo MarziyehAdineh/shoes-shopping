@@ -73,14 +73,14 @@ export class Detail extends Component {
               <div
                 style={{ height:"20px",width:"70px", display: "flex", fontFamily:"sans-serif" }}
               >
-               <del><b>{data.priceOff}</b> </del>
+               {/* <del><b>{parseInt(data.priceOff).toLocaleString()}</b> </del> */}
 
               </div>
               <div
                 style={{ color: "#000", display: "flex", textIndent: "8px",fontFamily:"sans-serif" }}
               >
                 <p> تومان </p>
-                <span><b>{data.price}</b> </span>
+                <span><b>{parseInt(data.price).toLocaleString()}</b> </span>
               </div>
               <button
                 style={{ height: "40px" }}
