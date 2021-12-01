@@ -9,9 +9,8 @@ export default class MySlide extends Component {
   
   render() {
     return (
-<div>
 <Link to={"/Detail/" + this.props.product.id} style={{textDecoration:"none",color:"black"}} >
-
+<div className="col-5">
       <div
         id="product"
         className="card mt-5"
@@ -48,6 +47,8 @@ export default class MySlide extends Component {
               borderRadius: "5px",
               backgroundColor: "rgb(158, 78, 68)",
               color: "white",
+                            fontFamily:"sans-serif"
+
             }}
           >
             <del>{this.props.product.priceOff.toLocaleString()}</del>
@@ -59,7 +60,8 @@ export default class MySlide extends Component {
                 fontSize: "15px",
                 fontWeight: "bold",
                 textShadow: "unset",
-              color:"black"
+              color:"black",
+              fontFamily:"sans-serif"
               }}
             >
               {this.props.product.price.toLocaleString()}
@@ -68,13 +70,13 @@ export default class MySlide extends Component {
                 توضیحات بیشتر
               </span>
             */}
-           
+           </div>
           </div>
         </div>
       </div>
       </Link>
 
-      </div>
+      
     );
   }
 }

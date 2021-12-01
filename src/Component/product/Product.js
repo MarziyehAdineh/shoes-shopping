@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import StarRating from "../../pages/Star";
 
 export const Product = ({ data }) => {
+
+ 
+    
   return (
 
     <div>
@@ -19,7 +22,7 @@ export const Product = ({ data }) => {
       <div className="container">
         <img
           src={data.pic}
-          className="card-img-top"
+          className="card-img-top, img-fluid"
           style={{ borderRadius: "4%", height: "195px" }}
         />
         <br />
@@ -44,7 +47,9 @@ export const Product = ({ data }) => {
               fontSize: "15px",
               fontWeight: "bold",
               textShadow: "unset",
+              fontFamily:"sans-serif"
             }}
+
           >
                      {parseInt(data.price).toLocaleString()}
 

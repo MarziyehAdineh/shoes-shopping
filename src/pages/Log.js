@@ -71,17 +71,15 @@ export default class Log extends Component {
                 />
                 <br />
                 <br />
-                <div style={{marginBottom:"17px",display:"flex",  fontFamily: "sans-serif" ,alignItems:"center",justifyContent:"center"}}>
+                <div style={{marginBottom:"17px",display:"flex",textIndent:"5px",  fontFamily: "sans-serif" ,alignItems:"center",justifyContent:"center"}}>
                 
                  
                   <LoginGoogle />
-                  /
-                  <Link to="./sabtName">
+/
+                         <Link to="./sabtName">
                     <b>ثبت نام</b>
                   </Link>
-                  {/* <Link to="LoginGoogle">
-                    <b>ورود با گوگل</b>
-                  </Link> */}
+                 
                 </div>
               </div>
             </div>

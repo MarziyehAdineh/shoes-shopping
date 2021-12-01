@@ -107,7 +107,7 @@ export class Detail extends Component {
          
               </div>
             </div>
-            <img alt={data.title} src={data.pic} width="35%"  id="pic1"/>
+            <img className="img-fluid" alt={data.title} src={data.pic} width="35%"  id="pic1"/>
           
           </div>
           <div id="comment">

@@ -9,10 +9,10 @@ body{
   font-family: 'iransance';
   src: url(/Fonts/A-Iranian-Sans/Iranian\ Sans.ttf)format(ttf);
 } */
-@media only screen and (max-width: 7px) {
+@media only screen and (max-width: 300px) {
     /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
+    [class*="card mt-5"] {
+      width: 300px;
       position: relative;
 
     }
@@ -21,18 +21,36 @@ body{
       [class*="col-3"]{
         width: 700px;
         position: relative;
-
-
       }
-      @media only screen  and(min-width:768px) and(max-width:990px){
+      [class*="col-5"]{
+        width: 600px;
+     display: inline-block;
+        /* position: relative; */
+        
+      }
+      #backdetail{
+        display: grid;
+        width: 400px;
+      }
+      #navz{
+        width: 100px;
+        display: flex;
+      }
+      /* @media only screen  and(min-width:768px) and(max-width:990px){
         #product{
           width:100%;
           height: 300px;
           position: relative;
         }
-      }
+        #off{
+          width:10px;
+          height: 300px;
+          position: relative;
+         
+        }
+      } */
 
-  }
+  } 
   #box{
     background-Color:#e2e2e2; 
       /* width:300px;
@@ -103,6 +121,10 @@ body{
  outline: none;
  
  }
+ @font-face {
+  font-family: iranian;
+  src: url("./Fonts/A-Iranian-Sans/Iranian\ Sans.ttf");
+}
 
  #fields label{
    transition: all 0.3s;
@@ -143,31 +165,67 @@ cursor: pointer;
     visibility: visible;
     opacity: 1;
    }
-  
- 
-  #sabt{
-text-shadow: red;
-margin-top: 60px; 
-align-items:stretch;
-box-shadow: 6px 6px 15px 0 rgba(0, 0 ,2,0.3);
-background-color: rgb(221, 213, 213);
-height: 300px;
- }
-  #sabtname{
-    display:flex;
-    width: 300px;
-font-family:  iransance;
-text-align: center;
-margin-left: 690px;
-direction:rtl;
-margin-top: 80px;
+  #btn-sabtname{
+    width: 97%;
+   height: 40px;
+   border-radius: 35px;
+   border: none;
+   /* margin: 40px 20px; */
+   /* box-shadow: inset 8px 8px 16px #c4c4cc,
+ -8px -8px 16px  #f2f2f2; */
+ background-color:#6ab3f6;
+ align-items: center;
+ /* padding-left: 2px;
+ margin-left: 5px; */
+ font-weight: bold;
+ font-size: 15px;
+ color: #555;
+ outline: none;
+ margin-left: 90px;
+ font-family: sans-serif;
   }
+  #sabtname{
+background-Color:#e2e2e2; 
+/* width:300px;
+height:150px; */
+margin-left: 360px; 
+/* margin-top: 8px; */
+border-radius: 24px; 
+box-shadow: 8px 8px 16px #c4c4cc,
+-8px -8px 16px  #f2f2f2;
+width:320px;
+height:540px;
+justify-content: center;
+position: relative;
+  } 
+
  #in{
-   border-radius: 4px;
+   /* border-radius: 4px;
    width: 300px;
  text-align: center;
- /* margin-left: 170px; */
-  }
+  margin-left: 170px; 
+  border: none; */
+  margin-top: 10px;
+height: 20px;;
+  width: 90%;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  border: none;
+  background: none;
+  outline: none;
+  font-family: sans-serif;
+  box-shadow: inset 5px 5px 7px #c4c4cc,
+  -5px -5px 7px #f2f2f2;
+  letter-spacing: 1px;
+align-items: center;
+  text-align: right;
+  margin-left: 10px;
+font-size: 15px;
+text-indent: 10px;
+padding: 5px;
+   }
 
   #product{
       background-color: #eeeeee;
@@ -273,15 +331,22 @@ transition: 0.4s all;
   }
   @media only screen and(max-width:600px){
       ul {
-          flex-direction:column;
+        flex-direction:column;
       }
-      @keyframes App-logo-spin {
+      #product{
+        width: 50px; height: "100px"
+      }
+      #navz{
+        display: grid;
+      }
+
+      /* @keyframes App-logo-spin {
         from {
           transform: rotate(0deg);
         }
         to {
           transform: rotate(360deg);
-        }}
+        }} */
   }
   #title{
     animation: mymove 5s infinite;

@@ -7,9 +7,9 @@ export default class LoginGoogle extends Component {
     }
     render() {
         return (
-            <div>
+            <div style={{display:"flex",height:"20px"}}>
                 <GoogleLogin
-    clientId="301571072540-u9l583p2jregchqls2nv0b1r3v6ev7dl.apps.googleusercontent.com"
+    clientId="301571072540-jibtvlsef4hj9otika4cfj7rcnrgl00e.apps.googleusercontent.com"
     buttonText="ورود با گوگل"
     onSuccess={this.responseGoogle}
     onFailure={this.responseGoogle}

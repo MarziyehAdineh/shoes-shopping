@@ -42,7 +42,6 @@ export function Productlist(props) {
         </div>
       ))}
     
-
     </div>
   );
 }

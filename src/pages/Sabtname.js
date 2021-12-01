@@ -2,30 +2,18 @@ import React from "react";
 
 export const Sabtname = () => {
   return (
-	  <div style={{boder:"solid"}}>
+    <div className="container">
+	  <div id="sabtname" >
 	  <div id="sabt">
-	  <div  id="sabtname">
-      <div>
-        <b> نام</b> <input type="text" required id="in" />
-        <br />
-        <b> نام خانوادگی</b>
-        <input type="text" required id="in" /> <br />
-        <b>شماره ی تلفن </b> <input type="mobile" id="in" required />
-        <br />
-      </div>
-      <div>
-        <b>تاریخ تولد</b> <input type="date" id="in" data-jdp required />
-        <br />
-        <b>کد پستی </b>
-        <input type="number" id="in" required /> <br />
-        <b>آدرس محل سکونت </b> <input type="text" id="in" required />
-        <br />
-      </div>
-	
-      <div>
-        <b>ایمیل </b> <input type="email" id="in" name="email" /> <br />
-        <b> لطفا استان محل سکونت خود را انتخاب نمایید </b>{" "}
-        <input id="in" list="browsers" />
+	  
+  
+        <input type="text" id="in" placeholder=" نام"  required/>
+        <input type="text"  id="in"  placeholder=" نام خانوادگی" required /> 
+        <input type="mobile" id="in" placeholder=" شماره ی تلفن" required />
+        <input type="email" id="in"  placeholder="ایمیل" required  /> 
+      {/* <input type="date" id="in" placeholder="تاریخ تولد" data-jdp required /> */}
+        <input type="number" id="in"   placeholder=" کدپستی" required/> 
+        <input id="in" list="browsers"  placeholder=" استان" required/>
         <datalist id="browsers">
           <option>گیلان</option>
           <option>آذربایجان شرقی</option>
@@ -58,8 +46,9 @@ export const Sabtname = () => {
           <option>خراسان جنوبی</option>
           <option>البرز</option>
         </datalist>
-        <b>لطفا محل سکونت خود را انتخاب نمایید</b>
-        <input list="browsers" id="in" />
+        <input list="browsers" id="in" placeholder="شهرستان" required />
+        <input type="text" id="in" required placeholder="آدرس کامل محل سکونت" required />
+
         <datalist id="browsers">
           <option>آذرشهر</option>
           <option>اسکو</option>
@@ -402,15 +391,14 @@ export const Sabtname = () => {
           <option>مِيبُد</option>
           <option>يزد</option>
         </datalist>
-      </div>
-	  
-	<br/>
-	</div>
-	</div>
-	<br/>
-	  <br/>
-	<input style={{width:"120px"}} type="button" value="ثبت"className="btn btn-primary" />
+    
 
+
+	 <br/>
+	<input id="btn-sabtname" style={{width:"120px",height:"40px"}} type="submit"  value="ثبت"className="btn btn-primary" />
+
+	</div>
+  </div>
 	</div>
   );
 };
