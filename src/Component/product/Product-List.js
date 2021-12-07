@@ -5,6 +5,7 @@ import { Sabtname } from "../../pages";
 import { Product } from "./Product";
 export function Productlist(props) {
   return (
+    <div className="bcontainer">
     <div className="row">
       <div
         style={{
@@ -42,6 +43,7 @@ export function Productlist(props) {
         </div>
       ))}
     
+    </div>
     </div>
   );
 }

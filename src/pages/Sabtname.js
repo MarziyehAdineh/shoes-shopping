@@ -1,17 +1,19 @@
 import React from "react";
 
 export const Sabtname = () => {
+  var localToday = new Date().toLocaleDateString('fa-IR');
+console.log(localToday);
   return (
-    <div className="container">
-	  <div id="sabtname" >
-	  <div id="sabt">
+    <div >
+	  <div className="container" id="sabtname" >
+	  <div >
 	  
   
         <input type="text" id="in" placeholder=" نام"  required/>
         <input type="text"  id="in"  placeholder=" نام خانوادگی" required /> 
         <input type="mobile" id="in" placeholder=" شماره ی تلفن" required />
         <input type="email" id="in"  placeholder="ایمیل" required  /> 
-      {/* <input type="date" id="in" placeholder="تاریخ تولد" data-jdp required /> */}
+      <input type="datetime-local" id="in" placeholder="تاریخ تولد" data-jdp required />
         <input type="number" id="in"   placeholder=" کدپستی" required/> 
         <input id="in" list="browsers"  placeholder=" استان" required/>
         <datalist id="browsers">

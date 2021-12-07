@@ -5,7 +5,7 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000" />
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </html>
     <meta
       name="description"
@@ -13,7 +13,8 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
    
-
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link type="text/css" rel="stylesheet" href="jalalidatepicker.min.css" />
     <script type="text/javascript" src="jalalidatepicker.min.js"></script>
@@ -28,7 +29,7 @@
   <script src="js/jquery-1.10.1.min.js"></script>
 
   <script src="js/persianDatepicker.js"></script>
-
+  <script src="jquery-3.5.1.min.js"></script>
 <script>
 // <!-- jalaliDatepicker.startWatch(); -->
 // <!-- persianfont -->
@@ -42,7 +43,8 @@
 //  -->
 
 
-
+var localToday = new Date().toLocaleDateString('fa-IR');
+console.log(localToday);
 
    </script>
   </body>

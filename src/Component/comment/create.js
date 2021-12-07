@@ -30,26 +30,28 @@ export function CreateComment(props) {
   };
 
   return (
-    <form onSubmit={submitHandler} id="comment"  >
+    <form onSubmit={submitHandler} id="comment"  style={{textAlign:"right",alignItems:"center",direction:"rtl"}} >
       <div className="form-group">
-        <label>نام</label>
+      
         <input
           onChange={changeHandler}
           value={state.comment.author || ""}
           name="author"
           type="text"
           className="form-control"
+          placeholder="نام"
         />
         <small className="form-text text-danger">{state.errors.author}</small>
       </div>
       <div className="form-group">
-        <label>نظرات خود راوارد کنید</label>
+       <br/>
         <textarea
           value={state.comment.text || ""}
           onChange={changeHandler}
           className="form-control"
           name="text"
           rows="5"
+          placeholder="نظرات خود راوارد کنید"
 
         ></textarea>
           <StarRating/>

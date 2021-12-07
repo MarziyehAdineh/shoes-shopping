@@ -4,7 +4,7 @@ import { CardIcon } from "../card";
 import { Search } from "./Search";
 export const Navbar = () => {
   return (
-    <div>
+    <div className="container">
       <nav id="navz" className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <div className="collapse navbar-collapse" id="navbarSupportedContent">

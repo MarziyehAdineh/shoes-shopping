@@ -2,16 +2,16 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import LoginGoogle from "./LoginGoogle";
 export default class Log extends Component {
- constructor(){
-   super();
-   this.state={
-     showPassword:false,
-   }
- }
+  constructor() {
+    super();
+    this.state = {
+      showPassword: false,
+    };
+  }
   render() {
-    console.warn(this.state.showPassword)
+    console.warn(this.state.showPassword);
     return (
-      <div>
+      <div className="container">
         <div>
           <div>
             <div id="box">
@@ -28,10 +28,15 @@ export default class Log extends Component {
                 <div id="fields">
                   <input type="username" placeholder=""></input>
                   <label for="">نام کاربری</label>
-                  <input type={this.state.showPassword ? "text":"password"} placeholder="" ></input>
+                  <input
+                    type={this.state.showPassword ? "text" : "password"}
+                    placeholder=""
+                  ></input>
                   <label for="">رمز عبور</label>
                   <svg
-                  onClick={()=>this.setState({showPassword:!this.state.showPassword})}
+                    onClick={() =>
+                      this.setState({ showPassword: !this.state.showPassword })
+                    }
                     id="eye"
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -71,15 +76,20 @@ export default class Log extends Component {
                 />
                 <br />
                 <br />
-                <div style={{marginBottom:"17px",display:"flex",textIndent:"5px",  fontFamily: "sans-serif" ,alignItems:"center",justifyContent:"center"}}>
-                
-                 
-                  <LoginGoogle />
-/
-                         <Link to="./sabtName">
+                <div
+                  style={{
+                    marginBottom: "17px",
+                    display: "flex",
+                    textIndent: "5px",
+                    fontFamily: "sans-serif",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <LoginGoogle />/
+                  <Link to="./sabtName">
                     <b>ثبت نام</b>
                   </Link>
-                 
                 </div>
               </div>
             </div>

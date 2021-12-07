@@ -8,8 +8,8 @@ export const Product = ({ data }) => {
     
   return (
 
-    <div>
-            <Link to={"/Detail/" + data.id} style={{textDecoration:"none",color:"black"}} >
+    <div className="container">
+   <Link to={"/Detail/" + data.id} style={{textDecoration:"none",color:"black"}} >
  
 
     <div
