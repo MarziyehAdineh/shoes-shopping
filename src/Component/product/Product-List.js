@@ -41,7 +41,7 @@ export function Productlist(props) {
       </div>
       <br/>
       {props.Products.map((item) => (
-        <div className="col-3" key={item.id}>
+        <div className="col" key={item.id}>
           <Product data={item} />
         </div>
       ))}
