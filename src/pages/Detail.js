@@ -53,7 +53,7 @@ export class Detail extends Component {
       <div className="container" style={{            backgroundColor: "#eeeeee",
     }}>
         <div className="row" style={{direction:"ltr"}}>
-          <div className="col-5">
+          <div className="col-5 col-lg-5 col-md-7">
             <img
               alt={data.title}
               src={data.pic}
@@ -63,7 +63,7 @@ export class Detail extends Component {
           </div>
           <div
             id="picdetail"
-            className="col-3"
+            className="col-3  col-lg-3"
             style={{
               direction: "rtl",
               border: "1px",
@@ -82,7 +82,7 @@ export class Detail extends Component {
             </ul>
           </div>
           <div
-            className="col-3"
+            className="col-3  col-lg-3"
             style={{
               fontFamily: "sans-serif",
               marginTop: "2px",
@@ -161,7 +161,7 @@ export class Detail extends Component {
       
         <hr/>
         </div>
-        <div className="col-3"  style={{}}>
+        <div className="col-3  col-lg-3"  style={{}}>
         <div >
              <span style={{fontFamily:"sans-serif",textAlign:"right"}}  >نظرات کاربران</span>
 

@@ -5,9 +5,10 @@ import { Sabtname } from "../../pages";
 import { Product } from "./Product";
 export function Productlist(props) {
   return (
-    <div className="bcontainer">
+    <div className="container">
     <div className="row">
       <div
+      className="col"
         style={{
           border: "solid gray",
           backgroundColor: "lightgray",
@@ -30,6 +31,7 @@ export function Productlist(props) {
           
           }}
         >
+  
           <img
             alt="فروش ویژه"
             style={{width:"112px"}}
@@ -37,6 +39,7 @@ export function Productlist(props) {
           />
         </div>
       </div>
+      <br/>
       {props.Products.map((item) => (
         <div className="col-3" key={item.id}>
           <Product data={item} />

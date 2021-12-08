@@ -14,7 +14,7 @@ export const Product = ({ data }) => {
 
     <div
       id="product"
-      className="card mt-5"
+      className="card mt-5 "
       style={{ borderRadius: "10PX", width: "260px", height: "350px" }}
 
     >
