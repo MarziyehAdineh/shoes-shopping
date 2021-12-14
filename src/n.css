@@ -67,9 +67,9 @@ body {
   justify-content: center;
   position: relative;
   /* margin:100px; */
-align-items: center;
-margin: auto;
-padding: 10px;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
 }
 #box img {
   border-radius: 90px;
@@ -187,6 +187,9 @@ padding: 10px;
   margin-left: 90px;
   font-family: sans-serif;
 }
+#pro :hover {
+  background-color: #c4c4cc;
+}
 #sabtname {
   background-color: #e2e2e2;
   /* width:300px;
@@ -267,8 +270,8 @@ height:150px; */
 #picdetail {
   direction: rtl;
   font-size: 20px;
-  width:270px;
-  font-family:  sans-serif;
+  width: 270px;
+  font-family: sans-serif;
   /* width: 500px; */
   text-align: right;
   margin-bottom: auto;
@@ -277,8 +280,6 @@ height:150px; */
   border-radius: 10px;
   margin: 10px;
   box-shadow: 4px 4px 10px 0 rgba(213, 212, 239, 0.7);
-
-
 }
 
 #navbar {
@@ -366,8 +367,8 @@ input[type="radio"] {
 #comment {
   width: 400px;
   text-align: right;
-  font-family:sans-serif;
-/* margin-left: 200px; */
+  font-family: sans-serif;
+  /* margin-left: 200px; */
 }
 #pic1:hover {
   width: auto;

@@ -1,7 +1,7 @@
 {
   "name": "so",
   "version": "0.1.0",
-  "private": true,
+
   "homepage": "http://.",
   "dependencies": {
     "@majidh1/jalalidatepicker": "^0.3.1",

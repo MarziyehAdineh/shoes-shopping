@@ -4,6 +4,7 @@ import MyApp from "./off/MyApp";
 import { Sabtname } from "../../pages";
 import { Product } from "./Product";
 export function Productlist(props) {
+ 
   return (
     <div className="container">
     <div className="row">
@@ -40,11 +41,11 @@ export function Productlist(props) {
         </div>
       </div>
       <br/>
-      {props.Products.map((item) => (
+       {props.Products.map((item) => (
         <div className="col" key={item.id}>
           <Product data={item} />
         </div>
-      ))}
+      ))} 
     
     </div>
     </div>

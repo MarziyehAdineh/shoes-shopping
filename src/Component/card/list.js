@@ -75,7 +75,6 @@ export function Cart({ product }) {
               <button  style={{margin:"0px",width:"20px",height:"20"}} onClick={() => removecardHandler(product)}>-</button>
               </td>
               <td>{(product.price * product.quantity).toLocaleString()}</td>
-
               <td>ُ
                 <button
                   onClick={() => removeHandler(product)}

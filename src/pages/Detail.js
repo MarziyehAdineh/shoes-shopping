@@ -49,11 +49,13 @@ export class Detail extends Component {
     if (!data) {
       return <div>loading...</div>;
     }
+   
+
     return (
       <div className="container" style={{            backgroundColor: "#eeeeee",
     }}>
         <div className="row" style={{direction:"ltr"}}>
-          <div className="col-5 col-lg-5 col-md-7">
+          <div className="col-5 col-lg-5 col-md-7  ">
             <img
               alt={data.title}
               src={data.pic}
@@ -63,7 +65,7 @@ export class Detail extends Component {
           </div>
           <div
             id="picdetail"
-            className="col-3  col-lg-3"
+            className="col-3  col-lg-3 offset-lg-10"
             style={{
               direction: "rtl",
               border: "1px",
@@ -80,6 +82,8 @@ export class Detail extends Component {
               <li> :قابلیت ارتجاعی ،طبی</li>
               <li>زیره :کاهش فشار وارده</li>
             </ul>
+        
+
           </div>
           <div
             className="col-3  col-lg-3"
@@ -168,6 +172,7 @@ export class Detail extends Component {
              <CreateComment onComment={this.submitComment.bind(this)} />
              <CommentList comments={data.comments || []} />
             
+           
            </div>
            </div>
     </div>
