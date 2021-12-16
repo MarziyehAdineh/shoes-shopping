@@ -1,5 +1,9 @@
 import axios from "axios";
-const apiAddress = "http://localhost:5000/product/";
+//const apiAddress = "http://localhost:5000";
+
+//const apiAddress= "https://magnificent-knotty-hen.glitch.me/"
+//https://zircon-pollen-humidity.glitch.me/product
+const apiAddress= "https://zircon-pollen-humidity.glitch.me/product/"
 export const ProductService = {
   getProducts: (q = "") => {
     return axios.get(apiAddress + q);
