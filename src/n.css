@@ -28,6 +28,9 @@ body {
     display: flex;
     position: relative;
   }
+  #hambergermenu{
+    display: none;
+  }
   #product {
     display: grid;
     width: 20px;
@@ -338,7 +341,7 @@ nav ul li a i {
     width: 50px;
     height: "100px";
   }
-  #navz {
+  .navbar {
     display: grid;
   }
 

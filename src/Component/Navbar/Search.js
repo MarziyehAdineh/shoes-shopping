@@ -16,6 +16,9 @@ export function Search() {
   return (
     <div>
       <form onSubmit={submitHandler} class="d-flex">
+      <button className="btn btn-outline-success" type="submit">
+          جستجو
+        </button>
         <input
           className="form-control me-2"
           type="search"
@@ -27,9 +30,7 @@ export function Search() {
           } 
         }
         />
-        <button className="btn btn-outline-success" type="submit">
-          جستجو
-        </button>
+        
       </form>
     </div>
   );

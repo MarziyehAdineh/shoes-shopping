@@ -7,6 +7,8 @@ export default class HomePage extends React.Component {
 
  
   fetchData() {
+    
+    
     ProductService.getProducts(this.props.location.search).then((response) =>
       this.setState({ products: response.data })
     );

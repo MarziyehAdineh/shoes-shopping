@@ -7,15 +7,15 @@ console.log(localToday);
     <div >
 	  <div className="container" id="sabtname" >
 	  <div >
-	  
+	  <form>
   
         <input type="text" id="in" placeholder=" نام"  required/>
         <input type="text"  id="in"  placeholder=" نام خانوادگی" required /> 
-        <input type="mobile" id="in" placeholder=" شماره ی تلفن" required />
-        <input type="email" id="in"  placeholder="ایمیل" required  /> 
-      <input type="datetime-local" id="in" placeholder="تاریخ تولد" data-jdp required />
-        <input type="number" id="in"   placeholder=" کدپستی" required/> 
-        <input id="in" list="browsers"  placeholder=" استان" required/>
+        <input type="tel" id="in" placeholder=" شماره ی تلفن" aria-required="false"   />
+        <input type="email" id="in"  placeholder="ایمیل" aria-required="false"  /> 
+      {/* <input type="datetime-local" id="in" placeholder="تاریخ تولد" data-jdp required /> */}
+        <input type="number" id="in"   placeholder=" کدپستی"    required="required"/> 
+        <input id="in" list="browsers"  placeholder=" استان"   required="required"/>
         <datalist id="browsers">
           <option>گیلان</option>
           <option>آذربایجان شرقی</option>
@@ -48,8 +48,8 @@ console.log(localToday);
           <option>خراسان جنوبی</option>
           <option>البرز</option>
         </datalist>
-        <input list="browsers" id="in" placeholder="شهرستان" required />
-        <input type="text" id="in" required placeholder="آدرس کامل محل سکونت" required />
+        <input list="browsers" id="in" placeholder="شهرستان" required="required" />
+        <input type="text" id="in"    required="required" placeholder="آدرس کامل محل سکونت" required />
 
         <datalist id="browsers">
           <option>آذرشهر</option>
@@ -397,10 +397,12 @@ console.log(localToday);
 
 
 	 <br/>
-	<input id="btn-sabtname" style={{width:"120px",height:"40px"}} type="submit"  value="ثبت"className="btn btn-primary" />
-
+	{/* <input id="btn-sabtname" style={{width:"120px",height:"40px"}} type="submit"  value="ثبت"className="btn btn-primary" /> */}
+<input id="btn-sabtname"  type="submit" value="ثبت اطلاعات " style={{width:"120px",height:"40px"}} />
+</form>
 	</div>
   </div>
+ 
 	</div>
   );
 };

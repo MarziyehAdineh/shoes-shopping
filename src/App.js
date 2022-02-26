@@ -1,6 +1,7 @@
 
 import React from "react";
 import "./App.css";
+import "./n.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar } from "./Component/Navbar";
@@ -10,7 +11,6 @@ import HomePage from "./pages/Home";
 import { CartPage } from "./pages";
 import Log from "./pages/Log";
 
-import "./n.css";
 function App() {
   return (
     <BrowserRouter>
