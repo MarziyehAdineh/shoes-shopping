@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -36,7 +36,7 @@ export default function MyApp() {
     <>
       <Swiper
         slidesPerView={1}
-        spaceBetween={101}
+        spaceBetween={350}
         pagination={{
           clickable: true,
         }}
@@ -62,8 +62,8 @@ export default function MyApp() {
       >
         {/* {[1,2,3,5,6,7,8,9,10].map((a)=><SwiperSlide><MySlide index={a} /></SwiperSlide>)} */}
         {/* {data.Products.map((item) => ( */}
-        {products.map((item) => (
-          <SwiperSlide>
+        {products.map((item,i) => (
+          <SwiperSlide key={i}>
             <MySlide product={item} />
           </SwiperSlide>
         ))}

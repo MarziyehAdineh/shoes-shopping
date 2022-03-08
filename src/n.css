@@ -1,17 +1,19 @@
 /* @import url(Fonts/A-Iranian-Sans/Iranian\ Sans.ttf); */
 body {
-  background-color: #f6f6f6;
+  /* background-color: #f6f6f6; */
+    background-color: #7a7b7c;
+
   /* background-color: #e2e2e2; */
 }
 
-@media only screen and (max-width: 300px) {
-  /* For mobile phones: */
-  /* [class*="card mt-3"] { */
-  /* width: 800px; */
-  /* position: relative; */
+/* @media only screen and (max-width: 300px) {
+  For mobile phones 
+   [class*="card mt-3"] {
+   width: 800px; 
+   position: relative; 
 
-  /* } */
-}
+   }
+} */
 /* @media only screen and (max-width: 600px) {
   #off {
    width: 400px;
@@ -192,6 +194,8 @@ body {
 }
 #pro :hover {
   background-color: #c4c4cc;
+  margin-top: 3px;
+
 }
 #sabtname {
   background-color: #e2e2e2;
@@ -240,6 +244,8 @@ height:150px; */
   box-shadow: 6px 6px 15px 0 rgba(0, 0, 2, 0.3);
   text-align: center;
   margin: 0 auto;
+  width: 100%;
+  /* padding: 10px; */
   /* color:rgb(155, 68, 68) */
   /* display: flex; */
 }
@@ -337,10 +343,7 @@ nav ul li a i {
   ul {
     flex-direction: column;
   }
-  #product {
-    width: 50px;
-    height: "100px";
-  }
+ 
   .navbar {
     display: grid;
   }
@@ -383,4 +386,26 @@ input[type="radio"] {
   outline-color: currentcolor;
   outline-style: none;
   outline-width: medium;
+}
+@media (max-width:858px){
+   #product{
+  /* width: 200px; */
+
+}
+#imgpro{
+  border-radius:20px;
+  width: 200px;
+  margin: 2px;
+
+}
+#textpro{
+  font-size: 25px;
+  margin-right:440px;
+  font-family: sans-serif;
+}
+}
+#imgpro{
+  border-radius: 10px;
+  width:780px ;
+/* }height="199px" */
 }

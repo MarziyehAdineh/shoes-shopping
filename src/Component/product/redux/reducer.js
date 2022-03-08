@@ -1,5 +1,5 @@
-import { act } from "react-dom/test-utils";
-import { FaAngleLeft } from "react-icons/fa";
+// import { act } from "react-dom/test-utils";
+// import { FaAngleLeft } from "react-icons/fa";
 import { REMOVE_FROM_CART } from "./action";
 import { ADD_TO_CART } from "./action";
 import { REMOVE_IN_CART } from "./action";

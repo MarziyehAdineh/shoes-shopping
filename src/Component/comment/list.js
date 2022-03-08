@@ -1,4 +1,4 @@
-import react from "react";
+// import react from "react";
 import StarRating from "../../pages/Star";
 import { CommentItem } from "./item";
 export function CommentList({ comments }) {

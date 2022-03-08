@@ -4,7 +4,8 @@ export * from "./cart";
 export * from "./Star";
 export *from "./Sabtname";
 export* from "./Log";
-export *from "./LoginGoogle"
+export *from "./LoginGoogle";
+export *from "./HomeAll"
 
 
 

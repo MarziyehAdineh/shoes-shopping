@@ -2,7 +2,7 @@
 import React from "react";
 import "./App.css";
 import "./n.css";
-
+import Servicekhab  from "./Component/sevicekhab/Sercivekhab";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar } from "./Component/Navbar";
 import { Detail, Sabtname } from "./pages";
@@ -10,16 +10,20 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HomePage from "./pages/Home";
 import { CartPage } from "./pages";
 import Log from "./pages/Log";
+import HomeAll from "./pages/HomeAll";
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className="container"> 
           <Switch>
-            <Route exact path="/" component={HomePage}/>
+
+            <Route exact path="/" component={HomeAll}/>
+            <Route exact path="/home" component={HomePage}/>
             <Route path="/detail/:id" component={Detail} />
+            <Route path="/Servickhab" component={Servicekhab} />
             <Route path="/Cart" children={<CartPage/>} />
             <Route path="/Sabtname" children={<Sabtname/>} />
             <Route path="/Log" children={<Log/>} />

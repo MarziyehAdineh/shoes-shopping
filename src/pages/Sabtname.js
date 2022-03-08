@@ -49,7 +49,7 @@ console.log(localToday);
           <option>البرز</option>
         </datalist>
         <input list="browsers" id="in" placeholder="شهرستان" required="required" />
-        <input type="text" id="in"    required="required" placeholder="آدرس کامل محل سکونت" required />
+        <input type="text" id="in"    required="required" placeholder="آدرس کامل محل سکونت" />
 
         <datalist id="browsers">
           <option>آذرشهر</option>

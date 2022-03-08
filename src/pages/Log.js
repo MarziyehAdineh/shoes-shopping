@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import HomeAll from "./HomeAll";
 import LoginGoogle from "./LoginGoogle";
 export default class Log extends Component {
   constructor() {
@@ -17,6 +18,7 @@ export default class Log extends Component {
             <div id="box">
               <div>
                 <img
+                alt="log in"
                   width="37%"
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT06ROdyxo4RXXIefo6uqHm3JvL4FTq7dgKLw&usqp=CAU"
                 />
@@ -95,6 +97,7 @@ export default class Log extends Component {
             </div>
           </div>
         </div>
+        <HomeAll/>
       </div>
     );
   }

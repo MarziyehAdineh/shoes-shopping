@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { FaTintSlash } from "react-icons/fa";
+// import { FaTintSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Time from "./tim";
+// import Time from "./tim";
 import Timer from "./timer";
-
 export default class MySlide extends Component {
   render() {
     return (
@@ -34,15 +33,16 @@ export default class MySlide extends Component {
 
             <div className="container">
               <img
+              alt={this.props.product.title}
                 src={this.props.product.pic}
                 className="card-img-top"
                 style={{ borderRadius: "4%", height: "150px", display: "grid" }}
               />
-              <br />
+              {/* <br /> */}
               <h1
                 className="card-title"
                 style={{
-                  fontSize: "15px",
+                  fontSize: "13px",
                   fontWeight: "bold",
                   fontFamily: "sans-serif",
                   display: "flex",

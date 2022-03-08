@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { CardIcon } from "../card";
-import { Productlist } from "../product";
-import { Search } from "./Search";
 
 export const Navbar = () => {
   return (
@@ -94,14 +92,13 @@ export const Navbar = () => {
     //   </div>
     // </div>
     <div>
-      <div className="navresponse"></div>
+      <div className="navresponse">
       <nav className="nav2">
 
         <input type="checkbox" id="check" />
         <label for="check" className="checkbtn">
-         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6k-WnmY7Fnzuk3u5d7jwEdOGf0GzUtfxypw&usqp=CAU" style={{width:"80px"}}></img>
+         <img alt="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6k-WnmY7Fnzuk3u5d7jwEdOGf0GzUtfxypw&usqp=CAU" style={{width:"80px"}}></img>
         </label>
-        <label className="logo">shoes shoping</label>
         <ul>
       
           <li>
@@ -119,6 +116,9 @@ export const Navbar = () => {
             <Link to="/Log">ورود </Link>
           </li>
           <li>
+            <Link to="/Servickhab">سرویس خواب  </Link>
+          </li>
+          <li>
             <Link to="/Cart">
               {" "}
               <CardIcon />
@@ -126,8 +126,11 @@ export const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <div style={{padding:"2px",width:"390px",alignItems:"start"}}>
+      <br/>
+      <div style={{padding:"2px",width:"300px",}}>
       {/* <Search /> */}
+      </div>
+
       </div>
     </div>
   );

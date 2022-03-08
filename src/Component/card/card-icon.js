@@ -1,5 +1,3 @@
-import react from "react";
-
 import React, { Component } from "react";
 import { cartstore } from "../product";
 
@@ -17,10 +15,11 @@ export class CardIcon extends Component {
     return (
       <div>
         <img
+          alt="سبد خرید"
           width="49px"
           src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-png-image-download-pngm-2.png"
         />
-        {this.state. count> 0 && (
+        {this.state.count > 0 && (
           <span
             style={{
               borderRadius: "60%",
@@ -32,7 +31,7 @@ export class CardIcon extends Component {
               height: "23px",
               width: "22px",
               padding: "2px",
-              textAlignLast:"center"
+              textAlignLast: "center",
             }}
           >
             {this.state.count}

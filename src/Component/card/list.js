@@ -1,19 +1,19 @@
-import React, { useState } from "react";
-import { Fragment } from "react";
-import { combineReducers } from "redux";
+import React from "react";
+// import { Fragment } from "react";
+// import { combineReducers } from "redux";
 import {
-  Product,
-  Productlist,
-  ProductService,
+  // Product,
+  // Productlist,
+  // ProductService,
   removeFromCart,
   removeincart,
 } from "../product";
 import { cartstore } from "../product";
 import { addToCart } from "../product";
-import { ADD_TO_CART } from "../product";
-import { cartReducer } from "../product/redux/reducer";
-import { Action } from "redux";
-import { Log} from "../../pages";
+// import { ADD_TO_CART } from "../product";
+// import { cartReducer } from "../product/redux/reducer";
+// import { Action } from "redux";
+// import { Log} from "../../pages";
 import { Link } from "react-router-dom";
 
 function compare( a, b ) {
@@ -63,10 +63,11 @@ export function Cart({ product }) {
         </thead>
         <tbody>
           {product.sort(compare).map((product, index) => (
-            <tr style={index%2==0?{backgroundColor:"white"}:{backgroundColor:"white"}} key={index}>
+            //////=ezafekardam
+            <tr style={index%2===0?{backgroundColor:"white"}:{backgroundColor:"white"}} key={index}>
               <th scope="row">{index + 1}</th>
               <td>
-                <img width="50" src={product.pic} />
+                <img width="50" alt="img" src={product.pic} />
               </td>
               <td>{product.title}</td>
               <td>{parseInt(product.price).toLocaleString()}</td>
