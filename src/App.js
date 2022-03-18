@@ -11,6 +11,7 @@ import HomePage from "./pages/Home";
 import { CartPage } from "./pages";
 import Log from "./pages/Log";
 import HomeAll from "./pages/HomeAll";
+import Edari from "./Component/Edari/Edari";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route exact path="/home" component={HomePage}/>
             <Route path="/detail/:id" component={Detail} />
             <Route path="/Servickhab" component={Servicekhab} />
+            <Route path="/Edari" component={Edari} />
             <Route path="/Cart" children={<CartPage/>} />
             <Route path="/Sabtname" children={<Sabtname/>} />
             <Route path="/Log" children={<Log/>} />

@@ -4,19 +4,18 @@ import React, { Component } from "react";
 // import { createStore } from "redux";
 import { CommentList, CreateComment } from "../Component/comment";
 // import { Search } from "../Component/Navbar/Search";
-import { addToCart, ProductService } from "../Component/product";
+import { addToCart, Product, ProductService } from "../Component/product";
 import { cartstore } from "../Component/product";
 import MyApp from "../Component/product/off/MyApp";
 export class Detail extends Component {
   state = {
-    data: [],
+    data: null,
   };
 
-  componentDidMount() {
-    const id = this.props.match.params.id;
-    ProductService.getProuductById(id).then(({ data }) =>
-      this.setState({ data })
-    );
+  componentDidMount=async ()=> {
+    const id = parseInt(this.props.match.params.id);
+    let result=await ProductService.getProuductById(id);
+    this.setState({ data:result.data });
 
     this.unsubscribe = cartstore.subscribe(() => {
       console.log(cartstore.getState());
@@ -56,6 +55,7 @@ export class Detail extends Component {
       <div className="container" style={{ backgroundColor: "#eeeeee" }}>
         <div className="row" style={{ direction: "ltr" }}>
           <div className="col-5 col-lg-5 col-md-7  ">
+            AAA
             <img
               alt={data.title}
               src={data.pic}

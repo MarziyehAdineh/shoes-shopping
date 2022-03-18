@@ -17,6 +17,7 @@
     "react-google-login": "^5.2.2",
     "react-icon": "^1.0.0",
     "react-icons": "^4.3.1",
+    "react-loading-skeleton": "^3.0.3",
     "react-particle-effect-button": "^1.0.1",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
@@ -64,4 +65,3 @@
     "url": "https://github.com/soheilapirmohamadi/forosh/issues"
   }
 }
-

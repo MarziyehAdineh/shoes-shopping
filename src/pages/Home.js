@@ -1,21 +1,25 @@
 import React from "react";
+import { Loading } from ".";
 import { Productlist } from "../Component/product";
 // import MyApp from "../Component/product/off/MyApp";
 import { ProductService } from "../Component/product";
+import Log from "./Log";
 export default class HomePage extends React.Component {
-  state = { products: []};
+  state = { products: [],
+  };
 
  
   fetchData() {
     
-    
-    ProductService.getProducts(this.props.location.search).then((response) =>
+
+    ProductService.getMobleman().then((response) =>
       this.setState({ products: response.data })
     );
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     this.fetchData();
+  
   }
 
   componentDidUpdate() {
@@ -23,12 +27,22 @@ export default class HomePage extends React.Component {
   }
 
   render() {
+    const data = this.state.data;
+    if (!data) {
+      return  <Loading/>
+    }
     return (
+      <div>
+    
       <div className="container">
         <div className="row">
           <Productlist Products={this.state.products} />
         </div>
       </div>
+
+      </div>
+      
     );
   }
+    
 }

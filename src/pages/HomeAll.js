@@ -4,22 +4,46 @@ import { Link } from "react-router-dom";
 export default class HomeAll extends Component {
   render() {
     return (
-      <div className="container" id="home">
-        <div id="homestyle" class="responsive">
-          <img
-          id="imghome"
-            width="720px"
-            height="480px"
-            src="https://parsstock.ir/600/10293/1574454-%D9%85%D9%88%DA%A9%D8%A7%D9%BE-%D9%81%D8%B6%D8%A7%DB%8C-%D8%AF%D8%A7%D8%AE%D9%84%DB%8C-%D8%B4%DB%8C%DA%A9-%D8%A7%D8%AA%D8%A7%D9%82-%D8%A8%D8%A7-%D9%85%D8%A8%D9%84-%D8%B1%D8%A7%D8%AD%D8%AA%DB%8C-%D9%88-%D8%AF%DA%A9%D9%88%D8%B1-%D8%B7%D9%84%D8%A7%DB%8C%DB%8C.jpg"
-          />
-          <div className="col-5" id="nothome" style={{display:"grid",direction:"rtl"}}>
-         
-            <Link to="/home">
-              <button id="buttonhome" style={{ height: "60px",fontFamily:"sans-serif" }} >
-                برای بازدید از مدل ها کلیک کنید
-              </button>
-            </Link>
+      <div>
+      
+
+        <div className="container" id="home">
+          <div id="homestyle" className="responsive">
+            <img
+              id="imghome"
+              height="450px"
+              src="https://infinitychap.com/wp-content/uploads/2021/06/LW-1761-Copy.jpg"
+            />
+            <div
+              className="col-5"
+              id="nothome"
+              // style={{ display: "grid", direction: "rtl" }}
+            >
+               <h5
+          style={{
+            fontFamily: "Nastaligh",
+            textDecoration: " underline",
+            fontSize: "50px",
+            direction: "rtl",
+            marginTop: "13px",
+          }}
+        >
+          تولیدی مبل ایران چوب
+        </h5>
+              <Link to="/home">
+                <button id="buttonhome" className="btn btn-outline-secondary  ">
+                  برای بازدید از مدل ها کلیک کنید
+                </button>
+              </Link>
+            </div>
           </div>
+          {/* <div style={{display:"flex",marginTop:"-8%" }}>
+            <div id="divhomeall"  className="card m-4"><span className="SpanHomeAll" > مبلمان اداری </span><img width="150px" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIBEiDgQsrdoRNjNBFHGm3K7uqdz1h5AeF6A&usqp=CAU"/></div>
+            <div id="divhomeall"  className="card m-4"><span className="SpanHomeAll" > سرویس خواب </span><img width="150px" height="auto" src="https://www.offdecor.com/image/cache/media/product/6271/Untitled-2-900x700w.jpg"/></div>
+            <div id="divhomeall"  className="card m-4"><span className="SpanHomeAll" >  مبل سلطنتی </span><img width="150px" height="auto" src="https://mobl.center/wp-content/uploads/2018/12/Webp.net-resizeimage-45.jpg"/></div>
+            <div id="divhomeall" className="card m-4"><span className="SpanHomeAll" > مبل راحتی  </span><img width="150px" height="auto" src="https://deltapayam.com/wp-content/uploads/2021/08/533-00301_main-shot_01_gallway-3-seat-sofa-bed-forest-green-velvet-1-800x491.jpg?v=1629447647"/></div>-
+
+            </div> */}
         </div>
       </div>
     );

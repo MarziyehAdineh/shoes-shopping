@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import HomeAll from "./HomeAll";
+import { Navbar } from "../Component/Navbar";
 import LoginGoogle from "./LoginGoogle";
 export default class Log extends Component {
   constructor() {
@@ -14,6 +14,7 @@ export default class Log extends Component {
     return (
       <div className="container22">
         <div>
+             <Navbar/>
           <div>
             <div id="box">
               <div>
@@ -97,7 +98,6 @@ export default class Log extends Component {
             </div>
           </div>
         </div>
-        <HomeAll/>
       </div>
     );
   }

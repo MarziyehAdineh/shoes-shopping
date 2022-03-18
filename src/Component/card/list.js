@@ -94,7 +94,7 @@ export function Cart({ product }) {
       </table>
 
       </div>
-      <Link to="/Log">
+      <Link to="/sabtname">
       <button
                   class="btn btn-danger"
                 >

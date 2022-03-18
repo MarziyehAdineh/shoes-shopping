@@ -9,7 +9,10 @@ export const ProductService = {
     return axios.get(apiAddress + q) 
     //  return axios.get("https://someetest2021.somee.com/product/");
   },
-  
+  getMobleman: () => {
+    return axios.get(apiAddress + "mobleman") 
+    //  return axios.get("https://someetest2021.somee.com/product/");
+  },
   getProuductById: (id) => {
     return axios.get(apiAddress + id);
   },
@@ -19,8 +22,14 @@ export const ProductService = {
   getProductsWithNewColection: () => {
     return axios.get(apiAddress +"NewColection");
   },
+  getProductsWithEdari: () => {
+    return axios.get(apiAddress +"Edari");
+  },
   getProductsWithserviskhab: () => {
     return axios.get(apiAddress +"serviskhab");
+  },
+  getProductsWithserviskhabById: (id) => {
+    return axios.get(apiAddress +"serviskhab/"+id);
   },
 
   addComment: (productId, comment) =>
