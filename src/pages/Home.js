@@ -27,10 +27,10 @@ export default class HomePage extends React.Component {
   }
 
   render() {
-    const data = this.state.data;
-    if (!data) {
-      return  <Loading/>
-    }
+    // const data = this.state.data;
+    // if (!data) {
+    //   return  <Loading/>
+    // }
     return (
       <div>
     

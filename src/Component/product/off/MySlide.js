@@ -33,12 +33,11 @@ export default class MySlide extends Component {
 
             <div className="container">
               <img
-              alt={this.props.product.title}
+                alt={this.props.product.title}
                 src={this.props.product.pic}
                 className="card-img-top"
                 style={{ borderRadius: "4%", height: "150px", display: "grid" }}
               />
-              {/* <br /> */}
               <h1
                 className="card-title"
                 style={{

@@ -12,10 +12,10 @@ export class Detail extends Component {
     data: null,
   };
 
-  componentDidMount=async ()=> {
+  componentDidMount = async () => {
     const id = parseInt(this.props.match.params.id);
-    let result=await ProductService.getProuductById(id);
-    this.setState({ data:result.data });
+    let result = await ProductService.getProuductById(id);
+    this.setState({ data: result.data });
 
     this.unsubscribe = cartstore.subscribe(() => {
       console.log(cartstore.getState());
@@ -24,7 +24,7 @@ export class Detail extends Component {
     // ProductService.getProuductById("off").then(({ data }) =>
     //   this.setState({ data })
     // )
-  }
+  };
   componentWillUnmount() {
     this.unsubscribe();
   }
@@ -54,36 +54,21 @@ export class Detail extends Component {
     return (
       <div className="container" style={{ backgroundColor: "#eeeeee" }}>
         <div className="row" style={{ direction: "ltr" }}>
-          <div className="col-5 col-lg-5 col-md-7  ">
-            AAA
+          <div>
             <img
               alt={data.title}
               src={data.pic}
               style={{
-                width: "400px",
+                width: "98%",
                 height: "400px",
                 boxShadow: "4px 4px 10px 0 rgba(213, 212, 239, 0.7)",
               }}
             />
           </div>
+      
+
           <div
-            id="picdetail"
-            className="col-1  col-lg-3 offset-lg-10"
-            style={{
-              direction: "rtl",
-              border: "1px",
-              textIndent: "3px",
-            }}
-          >
-            <p id="title">{data.title}</p>
-            <br />
-            <br />
-            <br />
-            <br />
-             {data.desc}
-          </div>
-          <div
-            className="col-1  col-lg-3"
+            className="col-3"
             style={{
               fontFamily: "sans-serif",
               marginTop: "2px",
@@ -92,14 +77,10 @@ export class Detail extends Component {
               margin: "10px",
               marginBottom: "auto",
               borderRadius: "10px",
-              width: "270px",
+              width: "30%",
               boxShadow: "4px 4px 10px 0 rgba(213, 212, 239, 0.7)",
-              // height:"400px"
-              // margin-bottom: auto;
-              // background-color: #eeeeee;
+
               height: "400px",
-              // border-radius: 10px;
-              // margin: 10px;
             }}
           >
             <br />
@@ -161,10 +142,25 @@ export class Detail extends Component {
               افزودن به سبد خرید
             </button>
           </div>
-
+          <div
+            id="picdetail"
+            className="col-3"
+            style={{
+              border: "1px",
+              width: "60%",
+              textIndent: "3px",
+            }}
+          >
+            <p id="title">{data.title}</p>
+            <br />
+            <br />
+            <br />
+            <br />
+            {data.desc}
+          </div>
           <hr />
         </div>
-        <div className="col-3  col-lg-3" style={{}}>
+        <div className="col-3  col-lg-3" style={{ height: "auto" }}>
           <div>
             <span style={{ fontFamily: "sans-serif", textAlign: "right" }}>
               نظرات کاربران

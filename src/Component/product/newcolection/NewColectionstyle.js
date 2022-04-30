@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 // import Time from "./tim";
 export default class NewColectionstyle extends Component {
   render() {
+  
     return (
-    //   <Link
-    //     to={"/Detail/" + this.props.product.id}>
+      // <Link
+      //   to={"/Detail/" + this.props.product.id}>
   
             <div className="container" >
               <img
@@ -14,12 +15,12 @@ export default class NewColectionstyle extends Component {
               alt={this.props.product.title}
                 src={this.props.product.pic}
                 className="card-img-top"
-                style={{  height: "350px", display: "grid",borderRadius:"2%"}}
+                style={{ width:"100%", height: "350px", display: "grid",borderRadius:"2%"}}
               />
               </div>
   
    
-    //   </Link>
+    // </Link> 
     );
   }
 }

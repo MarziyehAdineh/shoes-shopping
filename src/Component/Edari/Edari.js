@@ -18,7 +18,7 @@ export default function Edari() {
   };
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
       {products.map((item, i) => (
         <div key={i}>
           <EdariStyle product={item} />

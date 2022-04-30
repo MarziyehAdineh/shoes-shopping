@@ -22,7 +22,7 @@ export default class HomeAll extends Component {
                <h5
           style={{
             fontFamily: "Nastaligh",
-            textDecoration: " underline",
+            // textDecoration: " underline",
             fontSize: "50px",
             direction: "rtl",
             marginTop: "13px",

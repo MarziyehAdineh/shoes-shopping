@@ -14,7 +14,7 @@ export default class Log extends Component {
     return (
       <div className="container22">
         <div>
-             <Navbar/>
+             {/* <Navbar/> */}
           <div>
             <div id="box">
               <div>
@@ -71,12 +71,12 @@ export default class Log extends Component {
               </div>
               <div>
                 <input
-                  type="button"
+                  type="submit"
                   id="btn-login"
                   className="btn-btn-denger"
                   value="ورود"
                   style={{ fontFamily: "sans-serif", textIndent: "bold" }}
-                />
+               required />
                 <br />
                 <br />
                 <div

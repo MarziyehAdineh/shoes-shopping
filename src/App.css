@@ -3,12 +3,13 @@ body {
 }
 @font-face {
   font-family:'Nastaligh';
-  src: url(Component/Fonts/IranNastaliq/IranNastaliq.ttf)format('truetype');
+  src: url(Component/Fonts/IranNastaliq/IranNastaliq.ttf) format('truetype');
 }
 .navresponse {
-  font-family:sans-serif;
+  font-family:Nastaligh;
   padding: 0px;
   margin: 0px;
+  font-size: 30px;
   /* width: 1500px; */
   text-decoration: none;
   list-style: none;
@@ -24,7 +25,8 @@ label.logo {
   /* color: rgb(34, 88, 39); */
   font-size: 38px;
   line-height: 30px;
-  margin-top: 3%;
+  margin-top: 1%;
+  margin-left: 10px;
   font-weight: bold;
   font-family: Nastaligh;
   /* text-decoration: underline overline; */

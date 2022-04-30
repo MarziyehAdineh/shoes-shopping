@@ -218,7 +218,7 @@ height:150px; */
 }
 
 #product {
-  background-color: #eeeeee;
+  /* background-color: #eeeeee; */
   box-shadow: 6px 6px 15px 0 rgba(0, 0, 2, 0.3);
   text-align: center;
   margin: 0 auto;
