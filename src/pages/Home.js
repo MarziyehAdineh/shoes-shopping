@@ -34,7 +34,7 @@ export default class HomePage extends React.Component {
     return (
       <div>
     
-      <div className="container">
+      <div >
         <div className="row">
           <Productlist Products={this.state.products} />
         </div>

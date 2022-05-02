@@ -16,11 +16,8 @@ import Edari from "./Component/Edari/Edari";
 function App() {
   return (
     <BrowserRouter>
-    <div className="App">
-      {/* <Navbar/> */}
-      <div className="container"> 
+    <div>
           <Switch>
-
             <Route exact path="/" component={HomeAll}/>
             <Route exact path="/home" component={HomePage}/>
             <Route path="/detail/:id" component={Detail} />
@@ -29,9 +26,7 @@ function App() {
             <Route path="/Cart" children={<CartPage/>} />
             <Route path="/Sabtname" children={<Sabtname/>} />
             <Route path="/Log" children={<Log/>} />
-
           </Switch>
-      </div>
     </div>
     </BrowserRouter>
 
