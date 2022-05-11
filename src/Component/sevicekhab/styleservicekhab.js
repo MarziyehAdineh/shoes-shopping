@@ -2,10 +2,13 @@ import React, { Component } from "react";
 // import { FaTintSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+
 export default class StyleServickhab extends Component {
  
   render() {
     return (
+      <div >
+       
       <Link
         to={"/Detail/" + this.props.Service.id}
         style={{ textDecoration: "none", color: "black" }}
@@ -28,6 +31,7 @@ export default class StyleServickhab extends Component {
              </div>
              </div>
       </Link>
+      </div>
     );
   }
 }

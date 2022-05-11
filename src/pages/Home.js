@@ -34,10 +34,11 @@ export default class HomePage extends React.Component {
     return (
       <div>
     
-      <div >
-        <div className="row">
+      <div className="container">
+        <div className="row" >
           <Productlist Products={this.state.products} />
         </div>
+        {/* <productRespansive /> */}
       </div>
 
       </div>

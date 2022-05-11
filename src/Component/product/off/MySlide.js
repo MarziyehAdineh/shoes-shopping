@@ -10,7 +10,7 @@ export default class MySlide extends Component {
         to={"/Detail/" + this.props.product.id}
         style={{ textDecoration: "none", color: "black" }}
       >
-        <div
+        <div className="container"
           style={{
             display: "flex",
             flexWrap: "wrap",
@@ -31,7 +31,7 @@ export default class MySlide extends Component {
           >
             <Timer />
 
-            <div className="container">
+            <div >
               <img
                 alt={this.props.product.title}
                 src={this.props.product.pic}

@@ -27,19 +27,19 @@ export default function NewColection() {
     // );
   };
   return (
-    <>
-      <Swiper
+    <div >
+      <Swiper 
         spaceBetween={30}
         centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   // delay: 10000,
+        //   disableOnInteraction: false,
+        // }}
         pagination={{
           clickable: true,
         }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[ Pagination, Navigation]}
         className="mySwiper"
       >
         {/* {[1,2,3,5,6,7,8,9,10].map((a)=><SwiperSlide><MySlide index={a} /></SwiperSlide>)} */}
@@ -50,6 +50,6 @@ export default function NewColection() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </div>
   );
 }

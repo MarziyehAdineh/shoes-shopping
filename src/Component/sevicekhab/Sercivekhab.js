@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { ProductService } from "../product/Service";
 import { useEffect } from "react";
+import { Navbar } from "../Navbar";
 
 export default function Servicekhab() {
   const [serviskhab, setserviskhab] = useState([]);
@@ -21,7 +22,10 @@ export default function Servicekhab() {
     // );
   };
   return (
+
     <>
+
+   
       {serviskhab.map((item, i) => (
         <div key={i}>
           <StyleServickhab Service={item} />

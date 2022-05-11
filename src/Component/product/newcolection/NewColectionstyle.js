@@ -9,14 +9,19 @@ export default class NewColectionstyle extends Component {
       // <Link
       //   to={"/Detail/" + this.props.product.id}>
   
-            <div className="container" >
+            <div style={{width:"100%", display:"flex",alignItems:"center",marginRight:"0px"}} >
+              <Link
+        to={"/Detail/" + this.props.product.id}
+        style={{ textDecoration: "none", color: "black" }}
+      >
               <img
              
               alt={this.props.product.title}
                 src={this.props.product.pic}
-                className="card-img-top"
-                style={{ width:"100%", height: "350px", display: "grid",borderRadius:"2%"}}
+                
+                style={{ width:"100%",height:"100%",borderRadius:"2%"}}
               />
+              </Link>
               </div>
   
    

@@ -1,6 +1,5 @@
-body {
-  /* background-color: aquamarine; */
-}
+
+
 @font-face {
   font-family:'Nastaligh';
   src: url(Component/Fonts/IranNastaliq/IranNastaliq.ttf) format('truetype');
@@ -32,13 +31,13 @@ label.logo {
   /* text-decoration: underline overline; */
 }
 nav ul {
-  float: right;
-  margin-right: 20px;
+  /* float: right;
+  margin-right: 20px; */
 }
 nav ul li {
-  display: inline-block;
+  /* display: inline-block;
   line-height: 80px;
-  margin: 0 5px;
+  margin: 0 5px; */
 }
 link{
     
@@ -61,83 +60,8 @@ a:hover {
 #check {
   display: none;
 }
-@media (max-width: 952px) {
-  label.logo {
-    font-size: 27px;
-    padding-left: 50px;
-  }
-  nav ul li a {
-    font-size: 16px;
-  }
- 
-}
-@media (max-width: 858px) {
-  .checkbtn {
-    display: block;
-  }
-  label.logo {
-    font-size: 27px;
-    padding-left: 0px;
-  }
-  #imgpro {
-    width: 122px;
-    margin: 2px;
-    height: 80px;
-  }
-  #styleservic {
-    width: 200px;
-    border-radius: 3px;
-  }
-  #imghome {
-    width: 250px;
-    height: auto;
-  }
-  #spanhome {
-    font-weight: 10px;
-  }
-  ul {
-    position:fixed;
-    /* display: block; */
-    width: 60%;
-    color: rgb(14, 14, 14);
-    height: 10px;
-    background: hsl(0, 0%, 96%);
-    top: 5px;
-    left: -100%;
-    /* margin-top: auto; */
-    /* bottom:600px; */
-    text-align: center;
-    transition: all 0.5s;
-  }
-  nav ul li {
-    display:block;
-    margin: 50px 0;
-    line-height: 15px;
-    /* bottom: 600px; */
-  }
-  a:hoverr,
-  a.active {
-    background: none;
-    color: #0a0a0a;
-  }
-  #buttonhome{
-    /* width: 200px; */
-    font-size: 14px;
-    margin-right: 4px;
-    border-radius: 2px 2px 1px 2px;
-    margin-bottom: 100px;
-  }
- 
-  /* #buttonhome {
-    margin-left: -2140px;
-    margin-bottom: -1200px;
-    font-size: 10px;
-    width: 180px;
-    height: 50px;
-  }
-  */
- 
-}
+
+
 #check:checked ~ ul {
   left: 0;
 }
